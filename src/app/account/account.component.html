@@ -1,0 +1,42 @@
+<input type="text" [(ngModel)]="filterTerm">
+<button (click)="filter()" class="btn btn-primary">filter</button>
+
+<select [(ngModel)]="column">
+    <option>createAt</option>
+    <option>account_name</option>
+    <option>available_balance</option>
+    <option>currency</option>
+    <option>user_image</option>
+    <option>account_number</option>
+    <option>id</option>
+</select>
+<select [(ngModel)]="order">
+    <option >asc</option>
+    <option >desc</option>
+
+</select>
+<button class="btn btn-primary" (click)="sort()">sort</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>createAt</th>
+            <th>account_name</th>
+            <th>available_balance</th>
+            <th>currency</th>
+            <th>user_image</th>
+            <th>account_number</th>
+            <th>id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let account of account">
+        <td>{{account.createdAt}}</td>
+        <td>{{account.account_name}}</td>
+        <td>{{account.available_balance}}</td>
+        <td>{{account.currency}}</td>
+        <td><img src="{{account.user_image }} "></td>
+        <td>{{account.id}}</td>
+        </tr>
+    </tbody>
+</table>

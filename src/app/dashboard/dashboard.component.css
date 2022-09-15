@@ -1,0 +1,29 @@
+.parent{
+    width:100vw;
+    height:150vh;
+    display: flex;
+    background-color:skyblue;
+    color: black;
+
+}
+.child2{
+    background-color:lightblue;
+    width: 85% ;
+    height: 150%;
+    overflow: auto;
+}
+
+.child1{
+    width:15%;
+    height:150%;
+    background-color: green;
+    text-align: center;
+}
+h3{
+    color:orange ;
+}
+
+button{
+    color: blue;
+    background-color: red;
+}

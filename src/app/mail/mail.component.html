@@ -1,0 +1,21 @@
+
+<!-- <div  {{mail.completed}}> -->
+    <table class="table table-hover">
+        <thead>
+            <th>userid</th>
+            <th>id</th>
+            <th>title</th>
+            <th>completed</th>
+        </thead>
+    
+        <tbody>
+            <tr *ngFor="let mail of Mails" [ngClass]="{'visited': mail.completed==true, 'unvisited': mail.completed ==false}">
+                <input type="checkbox">
+                <td>{{mail.userId}}</td>
+                <td>{{mail.id}}</td>
+                <td>{{mail.title}}</td>
+                <td>{{mail.completed}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- </div> -->

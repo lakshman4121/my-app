@@ -1,0 +1,14 @@
+div{
+    background-color: rgb(221, 28, 141);
+    height: 70px; 
+    width: 900px;
+    margin: 40px;
+}
+
+.visited:hover{
+  background-color: yellow;
+
+}
+.unvisited{
+   background-color: red;
+}

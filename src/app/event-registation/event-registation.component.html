@@ -1,0 +1,16 @@
+<h2>event-registation works!</h2>
+
+<input class="form-control" type="text" [(ngModel)]="name">
+<button class="btn btn-danger" (click)="register()">Registion</button>
+<br>
+
+
+<ol>
+    <li *ngFor="let name of names; let i = index">
+        {{name}}
+    <button (click)="deleteEach(i)">delete</button>
+    </li>
+</ol>
+<button class="btn btn-danger" (click)="delete()">delete</button>
+<button class="btn btn-danger" (click)="deleteAll()">delete all</button>
+<button class="btn btn-success" (click)="reverse()">reverse</button>

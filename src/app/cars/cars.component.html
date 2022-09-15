@@ -1,0 +1,20 @@
+<p>cars works!</p>
+<div class="parent">
+<h3>company</h3>
+<label>company</label>
+<input type="radio" name="company" [(ngModel)]="company" value="HONDA">
+<label>HONDA</label>
+<input type="radio"name="company" [(ngModel)]="company" value="BMW">
+<label>BMW</label>
+<input type="radio" name="company" [(ngModel)]="company" value="AUDI">
+<label >AUDI</label>
+<br><br>
+
+<img *ngIf="company=='HONDA'" src="https://m.economictimes.com/thumb/msid-79933399,width-1200,height-900,resizemode-4,imgsize-97551/honda-civic-1.jpg" width="250" height="150">
+<br><br>
+<img  *ngIf="company=='BMW'" src="https://wallpaperaccess.com/full/124102.jpg" width="250" height="150">
+<br><br>
+<img *ngIf="company=='AUDI'" src="https://c4.wallpaperflare.com/wallpaper/777/369/220/audi-s5-audi-car-blue-cars-wallpaper-preview.jpg" width="250" height="150">
+
+
+<marquee >{{message}}</marquee>
