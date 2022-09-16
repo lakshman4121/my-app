@@ -7,8 +7,15 @@ import { CartService } from '../cart.service';
   styleUrls: ['./cartlist.component.css']
 })
 export class CartlistComponent implements OnInit {
+public cartCount: number = 0;
+  constructor(private _cartService:CartService) {
 
-  constructor(private _cartService:CartService) { }
+    this._cartService.getValue().subscribe(
+      (data:any)=>{
+        this.cartCount = data;
+      }
+    )
+   }
 
   ngOnInit(): void {
   }

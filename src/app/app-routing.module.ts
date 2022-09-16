@@ -6,6 +6,7 @@ import { CaculatorComponent } from './caculator/caculator.component';
 import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
 import { CartlistComponent } from './cartlist/cartlist.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -30,6 +31,7 @@ import { RectangularComponent } from './rectangular/rectangular.component';
 import { SqureComponent } from './squre/squre.component';
 import { StudentRegistationComponent } from './student-registation/student-registation.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 const routes: Routes = [
   {path:'login',component:LoginComponent },
@@ -59,7 +61,9 @@ const routes: Routes = [
     {path:'parent',component:ParentComponent},
     {path:'product',component:ProductComponent},
     {path:'nav',component:NavComponent},
-    {path:'cartlist',component:CartlistComponent}
+    {path:'cartlist',component:CartlistComponent},
+    {path:'create-student',component:CreateStudentComponent},
+    {path:'vehile-details/:id',component:VehicleDetailsComponent}
   ] },
   {path:'',component:LoginComponent },
   {path:'**',component:PagenotfoundComponent },

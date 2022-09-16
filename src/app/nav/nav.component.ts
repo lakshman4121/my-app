@@ -7,8 +7,16 @@ import { CartService } from '../cart.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  public cartCount:number = 0;
 
-  constructor(private _cartService:CartService) { }
+  constructor(private _cartService:CartService) {
+
+    this._cartService.getValue().subscribe(
+      (data:any)=>{
+        this.cartCount = data;
+      }
+    )
+   }
 
   ngOnInit(): void {
   }

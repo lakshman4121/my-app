@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Vehicle } from '../vehicle';
 import { VehicleService } from '../vehicle.service';
 
@@ -13,7 +14,7 @@ export class VehicleComponent implements OnInit {
   public order:string = "";
   public Vehicles:Vehicle[] = [];
 
-  constructor(private _vehicleService:VehicleService) { 
+  constructor(private _vehicleService:VehicleService, private router:Router) { 
     this._vehicleService.getVehicles().subscribe(
       (data:any)=>{
         this.Vehicles = data;
@@ -74,6 +75,10 @@ filter(){
           alert('Internal serve error');
         }
       )
+    }
+    view(id:string){
+      this.router.navigateByUrl('/dashboard/vehile-details'+'/'+id);
+
     }
 
 }

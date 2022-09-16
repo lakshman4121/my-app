@@ -36,6 +36,8 @@ import { StarComponent } from './star/star.component';
 import { ProductComponent } from './product/product.component';
 import { NavComponent } from './nav/nav.component';
 import { CartlistComponent } from './cartlist/cartlist.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,9 @@ import { CartlistComponent } from './cartlist/cartlist.component';
     StarComponent,
     ProductComponent,
     NavComponent,
-    CartlistComponent
+    CartlistComponent,
+    CreateStudentComponent,
+    VehicleDetailsComponent
   ],
   imports: [
     BrowserModule,

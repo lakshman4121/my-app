@@ -8,9 +8,15 @@ import { CartService } from '../cart.service';
 })
 export class ProductComponent implements OnInit {
 
+   public cartCount:number=0;
   constructor(private _cartService:CartService) { }
 
   ngOnInit(): void {
   }
+  add(){
+    this.cartCount++;
+    this._cartService.setValue(this.cartCount);
+  }
+
 
 }
