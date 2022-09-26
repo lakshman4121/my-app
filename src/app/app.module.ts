@@ -38,6 +38,9 @@ import { NavComponent } from './nav/nav.component';
 import { CartlistComponent } from './cartlist/cartlist.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AboutUsModule } from './about-us/about-us.module';
+import { AgePipe } from './age.pipe';
+import { PackagePipe } from './package.pipe';
 
 @NgModule({
   declarations: [
@@ -76,14 +79,17 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     NavComponent,
     CartlistComponent,
     CreateStudentComponent,
-    VehicleDetailsComponent
+    VehicleDetailsComponent,
+    AgePipe,
+    PackagePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

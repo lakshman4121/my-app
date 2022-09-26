@@ -17,7 +17,8 @@ export class VehicleDetailsComponent implements OnInit {
         this.getVehicle(data.id);
       }
     )
-   }
+   
+  }
 
   ngOnInit(): void {
   }

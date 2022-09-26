@@ -28,6 +28,9 @@ export class VehicleService {
     return this._httpClient.post<Vehicle>('https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction',vehicle);
 
   }
+  updateVehicle( id:string,vehicle:Vehicle):Observable<Vehicle>{
+    return this._httpClient.put<Vehicle>('https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction'+'/'+id,vehicle);
+  }
 
   deleteVehiles(id:string):Observable<Vehicle>{
     return this._httpClient.delete<Vehicle>('https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction'+'/'+id);

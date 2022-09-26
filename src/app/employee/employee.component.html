@@ -33,7 +33,7 @@
     <tbody>
         <tr *ngFor="let employee of employees;let i = index">
            <td>{{ employee.name }}</td>
-           <td>{{ employee.age }}</td>
+           <td>{{ employee.age |age }}</td>
            <td>{{ employee.company }}</td>
            <td>{{ employee.package }}</td>
            <td><button (click)="delete(i)">delete</button></td>

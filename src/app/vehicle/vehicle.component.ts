@@ -77,7 +77,11 @@ filter(){
       )
     }
     view(id:string){
-      this.router.navigateByUrl('/dashboard/vehile-details'+'/'+id);
+      this.router.navigateByUrl('/dashboard/vehicle-details'+'/'+id);
+
+    }
+    edit(id:string){
+      this.router.navigateByUrl('/dashboard/edit-vehicle'+'/'+id);
 
     }
 
